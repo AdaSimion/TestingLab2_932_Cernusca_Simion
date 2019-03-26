@@ -1,9 +1,9 @@
 package TestingLab2;
 
-import Domain.Student;
-import Exceptions.ValidatorException;
-import Repository.MemoryRepository.StudentRepo;
-import Validator.StudentValidator;
+import TestingLab2.Domain.Student;
+import TestingLab2.Exceptions.ValidatorException;
+import TestingLab2.Repository.MemoryRepository.StudentRepo;
+import TestingLab2.Validator.StudentValidator;
 import org.junit.Before;
 import org.junit.Test;
 
