@@ -95,10 +95,14 @@ public class AppTest
         XMLservice.add(params);
     }
 
-    @Test(expected = ValidatorException.class)
+    @Test
     public void testAddStudent_GroupBoundaryTest2() throws ValidatorException {
-        String[] params = {"1234","Simion Ada","-1","ada@gmail.com","Iuliana Bocicor"};
-        XMLservice.add(params);
+        try {
+            String[] params = {"1234","Ada Simion","2","ada@gmail.com","Prof. Iuliana Bocicor"};
+            XMLservice.add(params);
+        } catch(Exception ex) {
+            fail();
+        }
     }
 
     @Test
