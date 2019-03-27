@@ -35,10 +35,19 @@ public class AppTest
         }
     }
 
-    @Test(expected = ValidatorException.class)
-    public void testAddStudentNegativeGroup() throws ValidatorException {
-        String[] params = {"1","Ada Simion","-5","ada@gmail.com","Prof. Iuliana Bocicor"};
-        XMLservice.add(params);
+//    @Test(expected = ValidatorException.class)
+//    public void testAddStudentNegativeGroup() throws ValidatorException {
+//        String[] params = {"1","Ada Simion","-5","ada@gmail.com","Prof. Iuliana Bocicor"};
+//        XMLservice.add(params);
+//    }
+
+    @Test
+    public void testAddStudentNegativeGroup() {
+        try {
+            String[] params = {"1","Ada Simion","-5","ada@gmail.com","Prof. Iuliana Bocicor"};
+            XMLservice.add(params);
+            fail();
+        } catch(ValidatorException ex) { }
     }
 
     @Test(expected = ValidatorException.class)
@@ -114,4 +123,6 @@ public class AppTest
             fail();
         }
     }
+
+
 }
