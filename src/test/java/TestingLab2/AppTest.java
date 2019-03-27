@@ -1,9 +1,11 @@
 package TestingLab2;
 
+import TestingLab2.Domain.TemaLab;
 import TestingLab2.Exceptions.ValidatorException;
 import TestingLab2.Repository.XMLFileRepository.StudentXMLRepo;
 import TestingLab2.Service.XMLFileService.StudentXMLService;
 import TestingLab2.Validator.StudentValidator;
+import TestingLab2.Validator.TemaLabValidator;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -17,12 +19,14 @@ public class AppTest
     private StudentXMLRepo XMLrepo;
     private StudentXMLService XMLservice;
     private StudentValidator validator;
+    private TemaLabValidator assignmentValidator;
 
     @Before
     public void setup() {
         validator = new StudentValidator();
         XMLrepo = new StudentXMLRepo(validator, "TestStudentsXML.xml");
         XMLservice = new StudentXMLService(XMLrepo);
+        assignmentValidator = new TemaLabValidator();
     }
 
     @Test
@@ -126,5 +130,17 @@ public class AppTest
         }
     }
 
+    @Test
+    public void testValidateLabAssignment() {
+        try {
+            assignmentValidator.validate(new TemaLab(1, "Lab 1 Testing", 5, 3));
+        } catch(ValidatorException ex) {
+            fail();
+        }
+    }
 
+    @Test(expected = ValidatorException.class)
+    public void testValidateLabAssignment_InvalidDescription() throws ValidatorException {
+        assignmentValidator.validate(new TemaLab(1, "", 5, 3));
+    }
 }
