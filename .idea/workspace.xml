@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="42dcbe07-c11c-4187-891f-3c6de9d886e4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/TestingLab2/AppTest.java" afterPath="$PROJECT_DIR$/src/test/java/TestingLab2/AppTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,7 +35,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StudentValidator.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StudentValidator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/TestingLab2/Validator/StudentValidator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="747">
@@ -46,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AppTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestingLab2/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+            <state relative-caret-position="431">
+              <caret line="48" column="19" lean-forward="true" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -524,14 +523,11 @@
       <workItem from="1552477167255" duration="1366000" />
       <workItem from="1553617706939" duration="9103000" />
       <workItem from="1553672681022" duration="4999000" />
-      <workItem from="1553678019761" duration="1465000" />
+      <workItem from="1553678019761" duration="1641000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTest - 2019.03.27 at 11h 00m 50s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AppTest_testAddStudentIncorrectEmailFormat - 2019.03.27 at 10h 49m 32s.xml">
       <configuration name="AppTest.testAddStudentIncorrectEmailFormat" configurationId="JUnit" />
     </history-entry>
@@ -542,6 +538,9 @@
       <configuration name="AppTest.testAddStudentInvalidTeacherName" configurationId="JUnit" />
     </history-entry>
     <history-entry file="AppTest_testAddStudentNegativeGroup - 2019.03.27 at 12h 35m 57s.xml">
+      <configuration name="AppTest.testAddStudentNegativeGroup" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_testAddStudentNegativeGroup - 2019.03.27 at 12h 40m 39s.xml">
       <configuration name="AppTest.testAddStudentNegativeGroup" configurationId="JUnit" />
     </history-entry>
     <history-entry file="AppTest_testAddStudent_GroupBoundaryTest1 - 2019.03.27 at 10h 54m 18s.xml">
@@ -561,7 +560,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18757000" />
+    <option name="totallyTimeSpent" value="18933000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -896,16 +895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestingLab2/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TestingLab2/Repository/XMLFileRepository/AbstractXMLRepo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
@@ -927,6 +916,16 @@
         <state relative-caret-position="747">
           <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestingLab2/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="48" column="19" lean-forward="true" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -47,7 +47,9 @@ public class AppTest
             String[] params = {"1","Ada Simion","-5","ada@gmail.com","Prof. Iuliana Bocicor"};
             XMLservice.add(params);
             fail();
-        } catch(ValidatorException ex) { }
+        } catch(ValidatorException ex) {
+            assertTrue(true);
+        }
     }
 
     @Test(expected = ValidatorException.class)
