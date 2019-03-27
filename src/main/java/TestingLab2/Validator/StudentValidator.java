@@ -6,7 +6,7 @@ public class StudentValidator implements IValidator<Student> {
 
     public void validate(Student s) throws ValidatorException {
         String errors="";
-        if(s.getId().equals("")){
+        if(s.getId().equals("") || !s.getId().matches("[0-9]*")){
             //throw new ValidatorException("Id invalid\n");
             errors+="Id invalid\n";
         }
@@ -18,9 +18,12 @@ public class StudentValidator implements IValidator<Student> {
             //throw new ValidatorException("Grupa invalida\n");
             errors+="Grupa invalid\n";
         }
-        if(s.getEmail().equals("") || s.getEmail()==null){
+        if(s.getEmail().equals("") || s.getEmail()==null || !s.getEmail().contains("@")){
             //throw new ValidatorException("Email invalid\n");
             errors+="Email invalid\n";
+        }
+        if(s.getIndrumator().equals("")) {
+            errors += "Profesor indrumator invalid\n";
         }
         if (errors.length()!=0){
             throw  new ValidatorException(errors);
