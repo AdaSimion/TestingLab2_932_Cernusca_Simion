@@ -2,8 +2,13 @@ package TestingLab2;
 
 import TestingLab2.Domain.TemaLab;
 import TestingLab2.Exceptions.ValidatorException;
+import TestingLab2.Repository.XMLFileRepository.NotaXMLRepo;
 import TestingLab2.Repository.XMLFileRepository.StudentXMLRepo;
+import TestingLab2.Repository.XMLFileRepository.TemaLabXMLRepo;
+import TestingLab2.Service.XMLFileService.NotaXMLService;
 import TestingLab2.Service.XMLFileService.StudentXMLService;
+import TestingLab2.Service.XMLFileService.TemaLabXMLService;
+import TestingLab2.Validator.NotaValidator;
 import TestingLab2.Validator.StudentValidator;
 import TestingLab2.Validator.TemaLabValidator;
 import org.junit.Before;
@@ -19,14 +24,28 @@ public class AppTest
     private StudentXMLRepo XMLrepo;
     private StudentXMLService XMLservice;
     private StudentValidator validator;
+
     private TemaLabValidator assignmentValidator;
+    private TemaLabXMLService assignmentXMLservice;
+    private TemaLabXMLRepo assignmentXMLrepo;
+
+    private NotaValidator gradeValidator;
+    private NotaXMLService gradeXMLservice;
+    private NotaXMLRepo gradeXMLrepo;
 
     @Before
     public void setup() {
         validator = new StudentValidator();
         XMLrepo = new StudentXMLRepo(validator, "TestStudentsXML.xml");
         XMLservice = new StudentXMLService(XMLrepo);
+
         assignmentValidator = new TemaLabValidator();
+        assignmentXMLrepo = new TemaLabXMLRepo(assignmentValidator, "TestAssignmentsXML.xml");
+        assignmentXMLservice = new TemaLabXMLService(assignmentXMLrepo);
+
+        gradeValidator = new NotaValidator();
+        gradeXMLrepo = new NotaXMLRepo(gradeValidator, "TestGradesXML.xml");
+        gradeXMLservice = new NotaXMLService(gradeXMLrepo);
     }
 
     @Test
@@ -157,5 +176,47 @@ public class AppTest
     @Test(expected = ValidatorException.class)
     public void testValidateLabAssignment_InvalidId() throws  ValidatorException {
         assignmentValidator.validate(new TemaLab(Integer.parseInt(""+0),"desc",3,3));
+    }
+
+    /* Lab 4 In Class: */
+    @Test
+    public void testAddAssignmentValid_BlackBox() {
+        try {
+            String[] params = {"1","Lab 4 IC","3","5"};
+            assignmentXMLservice.add(params);
+        } catch(ValidatorException ex) {
+            fail();
+        }
+    }
+
+    // for add student, see above - testAddStudentValid
+
+    @Test
+    public void testAddGradeValid_BlackBox() {
+        try {
+            String[] params = {"1", "1", "1", "7", "2016-11-09T11:44:44.797"};
+            gradeXMLservice.add(params);
+        } catch(ValidatorException ex) {
+            fail();
+        }
+    }
+
+    @Test
+    public void addEntitiesBigBangIntegration() {
+        try {
+            //student
+            String[] params = {"1","Ada Simion","932","ada@gmail.com","Prof. Iuliana Bocicor"};
+            XMLservice.add(params);
+
+            //assignment
+            String[] params2 = {"1","Lab 4 IC","3","5"};
+            assignmentXMLservice.add(params2);
+
+            //grade
+            String[] params3 = {"1", "1", "1", "7", "2016-11-09T11:44:44.797"};
+            gradeXMLservice.add(params3);
+        } catch(ValidatorException ex) {
+            fail();
+        }
     }
 }
