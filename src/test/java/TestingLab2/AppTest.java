@@ -143,4 +143,19 @@ public class AppTest
     public void testValidateLabAssignment_InvalidDescription() throws ValidatorException {
         assignmentValidator.validate(new TemaLab(1, "", 5, 3));
     }
+
+    @Test(expected = ValidatorException.class)
+    public void testValidateLabAssignment_InvalidDeadlineWeek() throws  ValidatorException {
+        assignmentValidator.validate(new TemaLab(1,"desc",-3,3));
+    }
+
+    @Test(expected = ValidatorException.class)
+    public void testValidateLabAssignment_InvalidTurnInWeek() throws  ValidatorException {
+        assignmentValidator.validate(new TemaLab(1,"desc",3,-3));
+    }
+
+    @Test(expected = ValidatorException.class)
+    public void testValidateLabAssignment_InvalidId() throws  ValidatorException {
+        assignmentValidator.validate(new TemaLab(Integer.parseInt(""+0),"desc",3,3));
+    }
 }
