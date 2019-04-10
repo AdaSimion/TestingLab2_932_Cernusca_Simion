@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42dcbe07-c11c-4187-891f-3c6de9d886e4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/TestingLab2/AppTest.class" afterPath="$PROJECT_DIR$/target/test-classes/TestingLab2/AppTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/TestingLab2/AppTest.java" afterPath="$PROJECT_DIR$/src/test/java/TestingLab2/AppTest.java" />
     </list>
@@ -19,8 +20,8 @@
       <file leaf-file-name="AppTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestingLab2/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="213" column="12" lean-forward="true" selection-start-line="213" selection-start-column="12" selection-end-line="213" selection-end-column="12" />
+            <state relative-caret-position="587">
+              <caret line="241" column="35" lean-forward="false" selection-start-line="241" selection-start-column="35" selection-end-line="241" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -179,8 +180,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AppTest.addEntitiesBigBangIntegration">
-    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AppTest.addAssignmentIncrementalIntegration">
+    <configuration name="AppTest.addAssignmentIncrementalIntegration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="TestingLab2.*" />
@@ -192,8 +193,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="TestingLab2" />
       <option name="MAIN_CLASS_NAME" value="TestingLab2.AppTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="addAssignmentIncrementalIntegration" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -230,7 +231,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="AppTest.testAddAssignmentValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppTest.addGradeIncrementalIntegration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="TestingLab2.*" />
@@ -242,7 +243,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="TestingLab2" />
       <option name="MAIN_CLASS_NAME" value="TestingLab2.AppTest" />
-      <option name="METHOD_NAME" value="testAddAssignmentValid" />
+      <option name="METHOD_NAME" value="addGradeIncrementalIntegration" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -411,19 +412,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.AppTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.AppTest.testAddAssignmentValid" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.AppTest.testAddAssignmentValid_BlackBox" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.AppTest.testAddGradeValid_BlackBox" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.AppTest.addEntitiesBigBangIntegration" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.AppTest.testAddAssignmentValid_BlackBox" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.AppTest.testAddGradeValid_BlackBox" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.AppTest.addEntitiesBigBangIntegration" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.AppTest.addGradeIncrementalIntegration" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.AppTest.addAssignmentIncrementalIntegration" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.AppTest.addEntitiesBigBangIntegration" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.AppTest.testAddGradeValid_BlackBox" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.AppTest.testAddAssignmentValid_BlackBox" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.AppTest.testAddAssignmentValid" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.AppTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.AppTest.addAssignmentIncrementalIntegration" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.AppTest.addGradeIncrementalIntegration" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.AppTest.addEntitiesBigBangIntegration" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.AppTest.testAddGradeValid_BlackBox" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.AppTest.testAddAssignmentValid_BlackBox" />
       </list>
     </recent_temporary>
   </component>
@@ -443,13 +444,22 @@
       <workItem from="1553617706939" duration="9103000" />
       <workItem from="1553672681022" duration="4999000" />
       <workItem from="1553678019761" duration="4506000" />
-      <workItem from="1554888017575" duration="2220000" />
+      <workItem from="1554888017575" duration="3558000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
     <history-entry file="AppTest - 2019.04.10 at 12h 22m 10s.xml">
       <configuration name="AppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_addAssignmentIncrementalIntegration - 2019.04.10 at 13h 20m 11s.xml">
+      <configuration name="AppTest.addAssignmentIncrementalIntegration" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_addEntitiesBigBangIntegration - 2019.04.10 at 12h 57m 54s.xml">
+      <configuration name="AppTest.addEntitiesBigBangIntegration" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_addGradeIncrementalIntegration - 2019.04.10 at 13h 20m 01s.xml">
+      <configuration name="AppTest.addGradeIncrementalIntegration" configurationId="JUnit" />
     </history-entry>
     <history-entry file="AppTest_testAddAssignmentValid - 2019.04.10 at 12h 40m 00s.xml">
       <configuration name="AppTest.testAddAssignmentValid" configurationId="JUnit" />
@@ -469,18 +479,9 @@
     <history-entry file="AppTest_testAddGradeValid_BlackBox - 2019.04.10 at 12h 54m 56s.xml">
       <configuration name="AppTest.testAddGradeValid_BlackBox" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_testValidateLabAssignment - 2019.03.27 at 13h 28m 02s.xml">
-      <configuration name="AppTest.testValidateLabAssignment" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_testValidateLabAssignment_InvalidDescription - 2019.03.27 at 13h 38m 18s.xml">
-      <configuration name="AppTest.testValidateLabAssignment_InvalidDescription" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_testValidateLabAssignment_InvalidNumber - 2019.03.27 at 13h 36m 11s.xml">
-      <configuration name="AppTest.testValidateLabAssignment_InvalidNumber" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24018000" />
+    <option name="totallyTimeSpent" value="25356000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -868,8 +869,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestingLab2/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="213" column="12" lean-forward="true" selection-start-line="213" selection-start-column="12" selection-end-line="213" selection-end-column="12" />
+        <state relative-caret-position="587">
+          <caret line="241" column="35" lean-forward="false" selection-start-line="241" selection-start-column="35" selection-end-line="241" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

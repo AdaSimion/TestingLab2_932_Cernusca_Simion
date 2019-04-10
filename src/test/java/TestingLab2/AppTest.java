@@ -219,4 +219,41 @@ public class AppTest
             fail();
         }
     }
+
+    /* Lab 4 Take Home */
+    // for add student, see above - testAddStudentValid
+
+    @Test
+    public void addAssignmentIncrementalIntegration() {
+        try {
+            //student
+            String[] params = {"1","Ada Simion","932","ada@gmail.com","Prof. Iuliana Bocicor"};
+            XMLservice.add(params);
+
+            //assignment
+            String[] params2 = {"1","Lab 4 IC","3","5"};
+            assignmentXMLservice.add(params2);
+        } catch(ValidatorException ex) {
+            fail();
+        }
+    }
+
+    @Test
+    public void addGradeIncrementalIntegration() {
+        try {
+            //student
+            String[] params = {"1","Ada Simion","932","ada@gmail.com","Prof. Iuliana Bocicor"};
+            XMLservice.add(params);
+
+            //assignment
+            String[] params2 = {"1","Lab 4 IC","3","5"};
+            assignmentXMLservice.add(params2);
+
+            //grade
+            String[] params3 = {"1", "1", "1", "7", "2016-11-09T11:44:44.797"};
+            gradeXMLservice.add(params3);
+        } catch(ValidatorException ex) {
+            fail();
+        }
+    }
 }
